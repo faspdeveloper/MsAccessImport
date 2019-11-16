@@ -10,7 +10,7 @@
     </parent>
     <groupId>cc.altius.fhi</groupId>
     <artifactId>importMsAccess</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>v0.001</version>
     <name>importMsAccess</name>
     <description>Demo project for Spring Boot</description>
 

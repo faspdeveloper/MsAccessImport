@@ -28,7 +28,7 @@ public class ImportMsAccessApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        String databaseURL = "jdbc:ucanaccess:///home/akil/db/globalmoh.accdb";
+        String databaseURL = "jdbc:ucanaccess://"+args[0];
         try (Connection connection = DriverManager.getConnection(databaseURL)) {
             String sql = "select TABLE_NAME From information_schema.tables where table_schema='PUBLIC'";
             Statement statement = connection.createStatement();
